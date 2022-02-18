@@ -17,6 +17,7 @@ public class Main {
         PrintWriter fileOut = new PrintWriter(outputStream);
 
         //prints a line to gaming.txt then closes it
+        // if there is no gaming.txt already, creates it
         fileOut.println("Hello world");
         fileOut.close();
 
@@ -25,6 +26,7 @@ public class Main {
         Scanner fileIn = new Scanner(inputStream);
 
         //while laming.txt has another line, it prints it out
+        // if there is no laming.txt, breaks
         while(fileIn.hasNextLine()) {
             System.out.println(fileIn.nextLine());
         }
