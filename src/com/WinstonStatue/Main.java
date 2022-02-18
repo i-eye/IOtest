@@ -8,8 +8,8 @@ import java.io.FileInputStream;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-	    FileOutputStream outputStream = null;
-        PrintWriter fileOut = null;
+	    FileOutputStream outputStream;
+        PrintWriter fileOut;
         outputStream = new FileOutputStream("gaming.txt");
         fileOut = new PrintWriter(outputStream);
 
